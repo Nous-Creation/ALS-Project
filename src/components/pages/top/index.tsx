@@ -1,11 +1,11 @@
-import { Header, FirstView } from "@/components/base";
-import React from "react";
+import { Header, FirstView, Profile } from "@/components/base";
 
 export const Top = () => {
   return (
     <div>
       <Header />
       <FirstView />
+      <Profile />
     </div>
   );
 };

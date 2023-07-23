@@ -1,6 +1,4 @@
-import Image from "next/image";
-import styled from "@emotion/styled";
-import { keyframes } from "@emotion/react";
+import { styled, keyframes } from "styled-components";
 
 export const FirstView = () => {
   return (
