@@ -5,4 +5,5 @@ export * from "./MedicalOverview";
 export * from "./DonationExplanation";
 export * from "./DonationUsed";
 export * from "./PatientMessage";
+export * from "./DonationInformation";
 export * from "./Footer";

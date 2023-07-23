@@ -6,14 +6,14 @@ const descMessage = `病気の進行を早期にストップさせる可能性�
 export const DonationExplanation = () => {
   return (
     <Container>
-      <LeftWrapper>
-        <DonationImage src="/images/donation1.png" />
-      </LeftWrapper>
-
       <RightWrapper>
         <Title>目標金額</Title>
         <Description>{descMessage}</Description>
       </RightWrapper>
+
+      <LeftWrapper>
+        <DonationImage src="/images/donation1.png" />
+      </LeftWrapper>
     </Container>
   );
 };
@@ -24,6 +24,7 @@ const Container = styled.div`
   padding: 0 48px;
   text-align: center;
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
 
   @media (max-width: 780px) {
@@ -54,6 +55,10 @@ const Title = styled.h2`
   @media (max-width: 980px) {
     font-size: 24px;
   }
+
+  @media (max-width: 780px) {
+    text-align: center;
+  }
 `;
 
 const Description = styled.p`
@@ -70,6 +75,7 @@ const Description = styled.p`
   @media (max-width: 980px) {
     width: 100%;
     font-size: 16px;
+    margin-bottom: 12px;
   }
 `;
 

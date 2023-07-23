@@ -107,6 +107,11 @@ const Desc = styled.p`
   @media (max-width: 980px) {
     width: 100%;
     font-size: 16px;
+  }
+
+  @media (max-width: 780px) {
+    width: 100%;
+    font-size: 16px;
     text-align: left;
   }
 `;

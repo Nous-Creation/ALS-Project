@@ -13,9 +13,7 @@ export const Footer = () => {
       </Desc>
 
       <Button text="お問い合わせ" onClick={() => console.log("click")} />
-      <AllRights>
-        Copyright © 中島竜基 ALS治療の支援募金. All Rights Reserved.
-      </AllRights>
+      <AllRights>© 中島竜基 ALS治療の支援募金. All Rights Reserved.</AllRights>
     </Container>
   );
 };
