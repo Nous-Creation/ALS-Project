@@ -17,6 +17,10 @@ const Container = styled.div`
   padding: 80px 48px;
   text-align: center;
   background: url("/images/background2.png") no-repeat bottom 10px right 10px;
+
+  @media (max-width: 780px) {
+    padding: 80px 12px;
+  }
 `;
 
 const Title = styled.h2`
@@ -50,5 +54,10 @@ const Overview = styled.p`
   @media (max-width: 980px) {
     font-size: 16px;
     width: 85%;
+  }
+
+  @media (max-width: 780px) {
+    width: 100%;
+    text-align: left;
   }
 `;

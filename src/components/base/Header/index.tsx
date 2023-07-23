@@ -22,6 +22,9 @@ const Container = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 24px 24px;
+  @media (max-width: 780px) {
+    padding: 24px 12px;
+  }
 `;
 
 const Logo = styled.p`
@@ -32,6 +35,10 @@ const Logo = styled.p`
   font-weight: 900;
   line-height: normal;
   cursor: pointer;
+
+  @media (max-width: 780px) {
+    font-size: 16px;
+  }
 `;
 
 const HeaderRight = styled.div`

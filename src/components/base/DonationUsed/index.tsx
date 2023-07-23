@@ -26,6 +26,10 @@ const Container = styled.div`
   margin: 80px 0;
   padding: 0 48px;
   text-align: center;
+
+  @media (max-width: 780px) {
+    padding: 0 12px;
+  }
 `;
 
 const Wrapper = styled.div`

@@ -29,6 +29,7 @@ const Container = styled.div`
 
   @media (max-width: 780px) {
     display: block;
+    padding: 0 12px;
   }
 `;
 

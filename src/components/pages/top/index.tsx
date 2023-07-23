@@ -5,6 +5,7 @@ import {
   MedicalOverview,
   DonationExplanation,
   DonationUsed,
+  PatientMessage,
 } from "@/components/base";
 
 export const Top = () => {
@@ -16,6 +17,7 @@ export const Top = () => {
       <MedicalOverview />
       <DonationExplanation />
       <DonationUsed />
+      <PatientMessage />
     </div>
   );
 };
