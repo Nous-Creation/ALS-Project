@@ -1,40 +1,30 @@
-import { Button } from "@/components/ui";
 import React from "react";
 import { styled } from "styled-components";
 
-const descMessage = `・ALS治療の医療費の支援\n・介護費用\n※今後進行する可能性も想定し介護費用も使い道として考えております。\n\n上記に付随する経費（交通費、通院費、宿泊費、ホームページ運用費用、社団法人登記費用等）`;
+const descMessage = `病気の進行を早期にストップさせる可能性を秘めた治療を受けるための様々な費用として概算した金額となっております。集まった寄付金は、随時、本サイトに開示していきます。\nもし必要以上に集まった場合は、今後のALS治療の長期化に備え、支援団体が管理して参ります。将来的において、淳司のALSが完全治癒を実現した場合には、寄付金の残額は難病支援を求めている団体等に寄付いたします。`;
 
-export const DonationUsed = () => {
+export const DonationExplanation = () => {
   return (
     <Container>
-      <Wrapper>
-        <LeftWrapper>
-          <Title>寄付金の使い道</Title>
-          <Description>{descMessage}</Description>
-        </LeftWrapper>
-        <RightWrapper>
-          <DonationImage src="/images/donation2.png" />
-        </RightWrapper>
-      </Wrapper>
-      <Button text="寄付をする" onClick={() => console.log("click")} />
+      <LeftWrapper>
+        <DonationImage src="/images/donation1.png" />
+      </LeftWrapper>
+
+      <RightWrapper>
+        <Title>目標金額</Title>
+        <Description>{descMessage}</Description>
+      </RightWrapper>
     </Container>
   );
 };
 
 const Container = styled.div`
   width: 100vw;
-  margin: 80px 0;
+  margin: 80px auto;
   padding: 0 48px;
   text-align: center;
-`;
-
-const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: relative;
-  margin-bottom: 48px;
-  text-align: center;
 
   @media (max-width: 780px) {
     display: block;
@@ -75,7 +65,6 @@ const Description = styled.p`
   white-space: pre-wrap;
   text-align: left;
   width: 75%;
-  margin: 0 auto;
 
   @media (max-width: 980px) {
     width: 100%;

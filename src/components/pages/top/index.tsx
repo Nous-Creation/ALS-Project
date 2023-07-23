@@ -3,6 +3,7 @@ import {
   FirstView,
   Profile,
   MedicalOverview,
+  DonationExplanation,
   DonationUsed,
 } from "@/components/base";
 
@@ -13,6 +14,7 @@ export const Top = () => {
       <FirstView />
       <Profile />
       <MedicalOverview />
+      <DonationExplanation />
       <DonationUsed />
     </div>
   );
