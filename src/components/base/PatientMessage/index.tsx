@@ -99,7 +99,7 @@ const Desc = styled.p`
   color: #000;
   text-align: center;
   font-family: Noto Sans;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
