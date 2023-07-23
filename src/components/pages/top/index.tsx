@@ -1,4 +1,10 @@
-import { Header, FirstView, Profile, MedicalOverview } from "@/components/base";
+import {
+  Header,
+  FirstView,
+  Profile,
+  MedicalOverview,
+  DonationUsed,
+} from "@/components/base";
 
 export const Top = () => {
   return (
@@ -7,6 +13,7 @@ export const Top = () => {
       <FirstView />
       <Profile />
       <MedicalOverview />
+      <DonationUsed />
     </div>
   );
 };

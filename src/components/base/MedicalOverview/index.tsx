@@ -43,7 +43,7 @@ const Overview = styled.p`
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%; /* 38.4px */
+  line-height: 160%;
   margin: 0 auto;
   white-space: pre-wrap;
 
