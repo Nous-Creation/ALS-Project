@@ -13,7 +13,7 @@ import { styled } from "styled-components";
 
 export const Top = () => {
   return (
-    <Container>
+    <div>
       <Header />
       <FirstView />
       <Profile />
@@ -25,15 +25,11 @@ export const Top = () => {
       <div id="message">
         <PatientMessage />
       </div>
-      {/* 決済・振込 */}
-      <DonationInformation />
+      <div id="donation">
+        <DonationInformation />
+      </div>
       {/* 画像 */}
       <Footer />
-    </Container>
+    </div>
   );
 };
-
-const Container = styled.div`
-  overflow-y: scroll;
-  scroll-padding-top: 0;
-`;

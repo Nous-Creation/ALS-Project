@@ -9,6 +9,9 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   background-color: #ece8df;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-padding-top: 0;
 }
 
 a {

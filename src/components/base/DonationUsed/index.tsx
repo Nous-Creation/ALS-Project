@@ -16,7 +16,7 @@ export const DonationUsed = () => {
           <DonationImage src="/images/donation2.png" />
         </RightWrapper>
       </Wrapper>
-      <Button text="寄付をする" onClick={() => console.log("click")} />
+      <Button text="寄付をする" />
     </Container>
   );
 };

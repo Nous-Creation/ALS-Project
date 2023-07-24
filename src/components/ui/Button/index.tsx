@@ -3,19 +3,19 @@ import { styled } from "styled-components";
 
 interface Props {
   text: string;
-  onClick: () => void;
 }
 
-export const Button = ({ text, onClick }: Props) => {
+export const Button = ({ text }: Props) => {
   return (
-    <Container onClick={onClick}>
+    <Container href="#donation">
       {text}
       <ArrowImage src="images/arrow-right.png" />
     </Container>
   );
 };
 
-const Container = styled.button`
+const Container = styled.a`
+  display: inline-block;
   border: none;
   color: #ffffff;
   background-color: #e58c6c;
@@ -25,7 +25,7 @@ const Container = styled.button`
   font-size: 16px;
   font-style: normal;
   font-weight: 900;
-  line-height: normal;
+  line-height: 50px;
   border-radius: 25px;
   position: relative;
   cursor: pointer;

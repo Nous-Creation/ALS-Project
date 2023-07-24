@@ -40,12 +40,12 @@ const Title = styled.h2`
 `;
 
 const Overview = styled.p`
-  max-width: 850px;
+  max-width: 800px;
   width: 100%;
   color: #000;
   text-align: center;
   font-family: Noto Sans;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;

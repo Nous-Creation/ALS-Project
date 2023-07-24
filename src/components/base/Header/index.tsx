@@ -1,6 +1,5 @@
 import { styled } from "styled-components";
 import { AiOutlineMenu } from "react-icons/ai";
-import { HeaderLink } from "./HeaderLink";
 
 export const Header = () => {
   return (
@@ -46,6 +45,20 @@ const HeaderRight = styled.div`
   display: flex;
   align-items: center;
   gap: 32px;
+`;
+
+const HeaderLink = styled.a`
+  color: #483b34;
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  cursor: pointer;
+
+  @media (max-width: 780px) {
+    display: none;
+  }
 `;
 
 const IconWrapper = styled.div`
