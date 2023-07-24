@@ -9,21 +9,31 @@ import {
   DonationInformation,
   Footer,
 } from "@/components/base";
+import { styled } from "styled-components";
 
 export const Top = () => {
   return (
-    <div>
+    <Container>
       <Header />
       <FirstView />
       <Profile />
-      <MedicalOverview />
+      <div id="overview">
+        <MedicalOverview />
+      </div>
       <DonationExplanation />
       <DonationUsed />
-      <PatientMessage />
+      <div id="message">
+        <PatientMessage />
+      </div>
       {/* 決済・振込 */}
       <DonationInformation />
       {/* 画像 */}
       <Footer />
-    </div>
+    </Container>
   );
 };
+
+const Container = styled.div`
+  overflow-y: scroll;
+  scroll-padding-top: 0;
+`;

@@ -14,7 +14,8 @@ export const MedicalOverview = () => {
 
 const Container = styled.div`
   width: 100vw;
-  padding: 80px 48px;
+  margin: 80px 0;
+  padding: 0 48px;
   text-align: center;
   background: url("/images/background2.png") no-repeat bottom 10px right 10px;
 
