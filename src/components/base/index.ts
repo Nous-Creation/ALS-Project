@@ -6,4 +6,5 @@ export * from "./DonationExplanation";
 export * from "./DonationUsed";
 export * from "./PatientMessage";
 export * from "./DonationInformation";
+export * from "./ImageSlider";
 export * from "./Footer";
