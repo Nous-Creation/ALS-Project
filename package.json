@@ -5,13 +5,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "rm": "rm -rf docs",
-    "mv": "mv build docs",
-    "git": "git add . && git commit && git push origin master",
-    "deploy": "npm run rm && npm run build && npm run mv && npm run git"
+    "lint": "next lint"
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
