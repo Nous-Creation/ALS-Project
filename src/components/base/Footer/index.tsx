@@ -12,7 +12,7 @@ export const Footer = () => {
         によって組織化した一般社団法人「中島竜基を支える会」が運営しています。集まった募金は一旦、金融機関にて管理されます。その募金の使用用途に関しては、本社団法人内での理事会にて決定し、監事の確認を経た上で適切に管理して参ります。
       </Desc>
 
-      <Button text="お問い合わせ" />
+      <Button text="お問い合わせ" isEmail={true} />
       <AllRights>© 中島竜基 ALS治療の支援募金. All Rights Reserved.</AllRights>
     </Container>
   );

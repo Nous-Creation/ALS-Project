@@ -16,7 +16,7 @@ export const DonationUsed = () => {
           <DonationImage src="/images/donation2.png" />
         </RightWrapper>
       </Wrapper>
-      <Button text="寄付をする" />
+      <Button text="寄付をする" isEmail={false} />
     </Container>
   );
 };

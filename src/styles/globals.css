@@ -10,7 +10,7 @@ body {
   overflow-x: hidden;
   background-color: #ece8df;
   scroll-behavior: smooth;
-  scroll-padding-top: 0;
+  scroll-padding-top: 70px;
 }
 
 a {

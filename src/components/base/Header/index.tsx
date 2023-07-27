@@ -1,5 +1,4 @@
 import { styled } from "styled-components";
-import { AiOutlineMenu } from "react-icons/ai";
 
 export const Header = () => {
   return (
@@ -8,10 +7,6 @@ export const Header = () => {
       <HeaderRight>
         <HeaderLink href="#overview">ASL治療と寄付金について</HeaderLink>
         <HeaderLink href="#message">本人から一言</HeaderLink>
-
-        <IconWrapper>
-          <AiOutlineMenu style={{ fontSize: "26px" }} />
-        </IconWrapper>
       </HeaderRight>
     </Container>
   );
@@ -38,6 +33,8 @@ const Logo = styled.p`
 
   @media (max-width: 780px) {
     font-size: 16px;
+    width: max-content;
+    margin: 0 auto;
   }
 `;
 
@@ -54,18 +51,10 @@ const HeaderLink = styled.a`
   font-style: normal;
   font-weight: 900;
   line-height: normal;
+  display: block;
   cursor: pointer;
 
   @media (max-width: 780px) {
     display: none;
-  }
-`;
-
-const IconWrapper = styled.div`
-  display: none;
-
-  @media (max-width: 780px) {
-    display: block;
-    height: max-content;
   }
 `;

@@ -16,7 +16,7 @@ export const Profile = () => {
           <ProfileMessage>{profileMessage}</ProfileMessage>
         </RightWrapper>
       </Wrapper>
-      <Button text="寄付をする" />
+      <Button text="寄付をする" isEmail={false} />
     </Container>
   );
 };

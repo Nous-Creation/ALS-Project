@@ -3,11 +3,12 @@ import { styled } from "styled-components";
 
 interface Props {
   text: string;
+  isEmail: boolean;
 }
 
-export const Button = ({ text }: Props) => {
+export const Button = ({ text, isEmail }: Props) => {
   return (
-    <Container href="#donation">
+    <Container href={isEmail ? "mailto:hoge@dummy.com" : "#donation"}>
       {text}
       <ArrowImage src="images/arrow-right.png" />
     </Container>

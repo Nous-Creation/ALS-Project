@@ -10,15 +10,8 @@ import {
   Footer,
   ImageSlider,
 } from "@/components/base";
-import { useState } from "react";
-import { styled } from "styled-components";
 
 export const Top = () => {
-  const [sliderValue, setSliderValue] = useState<number>(50);
-
-  const handleSliderChange = (value: number) => {
-    setSliderValue(value);
-  };
   return (
     <div>
       <Header />
