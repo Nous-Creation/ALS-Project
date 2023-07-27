@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "deploy": "next export"
+    "deploy": "next export && touch out/.nojekyll"
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
