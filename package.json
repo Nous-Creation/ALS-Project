@@ -1,6 +1,6 @@
 {
   "name": "asl-project",
-  "homepage": "https://S-LIFE.github.io/ASL-Project/",
+  "homepage": "https://s-life.github.io/ASL-Project/",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d ."
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
@@ -29,6 +29,7 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "@types/react-slick": "^0.23.10"
+    "@types/react-slick": "^0.23.10",
+    "gh-pages": "^5.0.0"
   }
 }
