@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui";
-import { styled } from "styled-components";
+import styled from "styled-components";
 
 const profileMessage = `出身地 茨城県筑西市\n1995年生まれ 中島建築有限会社 大工\n 妻と子供3人の5人家族\n\n2022年夏頃から右手親指に脱力感\n2023年5月2日 27歳の時にALSと確定診断\n現在の症状は右手から右肩、左手から左肩までの筋萎縮と全身のあらゆる筋肉で痙攣が起きています。`;
 

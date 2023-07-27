@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui";
 import React from "react";
-import { styled } from "styled-components";
+import styled from "styled-components";
 
 const descMessage = `・ALS治療の医療費の支援\n・介護費用\n※今後進行する可能性も想定し介護費用も使い道として考えております。\n\n上記に付随する経費（交通費、通院費、宿泊費、ホームページ運用費用、社団法人登記費用等）`;
 

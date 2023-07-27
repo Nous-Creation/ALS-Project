@@ -1,5 +1,5 @@
 import React from "react";
-import { styled } from "styled-components";
+import styled from "styled-components";
 import { AiFillBank, AiFillCaretRight } from "react-icons/ai";
 import { BiCreditCard } from "react-icons/bi";
 

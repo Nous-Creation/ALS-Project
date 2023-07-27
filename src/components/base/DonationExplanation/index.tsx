@@ -1,5 +1,5 @@
 import React from "react";
-import { styled } from "styled-components";
+import styled from "styled-components";
 
 const descMessage = `病気の進行を早期にストップさせる可能性を秘めた治療を受けるための様々な費用として概算した金額となっております。集まった寄付金は、随時、本サイトに開示していきます。\nもし必要以上に集まった場合は、今後のALS治療の長期化に備え、支援団体が管理して参ります。将来的において、淳司のALSが完全治癒を実現した場合には、寄付金の残額は難病支援を求めている団体等に寄付いたします。`;
 

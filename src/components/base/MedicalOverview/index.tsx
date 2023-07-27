@@ -1,5 +1,5 @@
 import React from "react";
-import { styled } from "styled-components";
+import styled from "styled-components";
 
 const overview = `発症から平均3年〜5年が余命と言われています。\nしかし人工呼吸器や胃瘻を付ければ寝たきりでも命を繋ぐことは可能です。\n\n現在は保険適用内の薬を服用してますが2〜3ヶ月程度の延命が限度です。そこで私たちはALSの進行が止まるかまたは改善される可能性のある幹細胞再生医療や培養上清液などを受けたいと思っています。\n\nしかし、これらの治療は保険適用外のため1本300万円のものなど莫大な費用がかかるそうです。`;
 

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui";
 import React from "react";
-import { styled } from "styled-components";
+import styled from "styled-components";
 
 export const Footer = () => {
   return (
