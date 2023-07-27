@@ -70,6 +70,7 @@ export const PatientMessage = () => {
         <br />
         皆さんご協力宜しくお願い致します。
       </Desc>
+      <HandImage src="/images/hand_heart.png" />
     </Container>
   );
 };
@@ -105,13 +106,27 @@ const Desc = styled.p`
   line-height: 160%;
 
   @media (max-width: 980px) {
-    width: 100%;
+    max-width: max-content;
+    margin: 0 auto;
     font-size: 16px;
   }
 
   @media (max-width: 780px) {
-    width: 100%;
     font-size: 16px;
     text-align: left;
+  }
+`;
+
+const HandImage = styled.img`
+  margin: 0 auto;
+  margin-top: 48px;
+  display: block;
+
+  @media (max-width: 980px) {
+    width: 30%;
+  }
+
+  @media (max-width: 780px) {
+    width: 50%;
   }
 `;

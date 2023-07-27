@@ -7,7 +7,13 @@ export const DonationInformation = () => {
   return (
     <Container>
       <ContentWrapper>
-        <AiFillBank style={{ fontSize: "32px" }} />
+        <IconWrapper>
+          <AiFillBank
+            style={{
+              fontSize: "48px",
+            }}
+          />
+        </IconWrapper>
         <Title>銀行振込</Title>
         <Desc>
           〇〇銀行
@@ -25,28 +31,32 @@ export const DonationInformation = () => {
       </ContentWrapper>
 
       <ContentWrapper>
-        <BiCreditCard style={{ fontSize: "32px" }} />
+        <IconWrapper>
+          <BiCreditCard style={{ fontSize: "48px" }} />
+        </IconWrapper>
         <Title>クレジットカード決済</Title>
 
-        <PriceWrapper>
-          <AiFillCaretRight />
-          <Price>5,000円</Price>
-        </PriceWrapper>
+        <CardWrapper>
+          <PriceWrapper>
+            <AiFillCaretRight />
+            <Price>5,000円</Price>
+          </PriceWrapper>
 
-        <PriceWrapper>
-          <AiFillCaretRight />
-          <Price>10,000円</Price>
-        </PriceWrapper>
+          <PriceWrapper>
+            <AiFillCaretRight />
+            <Price>10,000円</Price>
+          </PriceWrapper>
 
-        <PriceWrapper>
-          <AiFillCaretRight />
-          <Price>50,000円</Price>
-        </PriceWrapper>
+          <PriceWrapper>
+            <AiFillCaretRight />
+            <Price>50,000円</Price>
+          </PriceWrapper>
 
-        <PriceWrapper>
-          <AiFillCaretRight />
-          <Price>150,000円</Price>
-        </PriceWrapper>
+          <PriceWrapper>
+            <AiFillCaretRight />
+            <Price>150,000円</Price>
+          </PriceWrapper>
+        </CardWrapper>
       </ContentWrapper>
     </Container>
   );
@@ -75,18 +85,35 @@ const ContentWrapper = styled.div`
   border-radius: 30px;
   text-align: left;
   padding: 24px;
+  position: relative;
 
   @media (max-width: 780px) {
+    margin: 0 auto;
+    max-width: 410px;
     width: 100%;
-    height: max-content;
 
     &:first-child {
-      margin-bottom: 24px;
+      margin-bottom: 48px;
     }
   }
 `;
 
+const IconWrapper = styled.div`
+  width: max-content;
+  padding: 12px;
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+
+  background-color: #ffffff;
+  border-radius: 50%;
+`;
+
 const Title = styled.p`
+  width: max-content;
   color: #000;
   font-family: Noto Sans;
   font-size: 24px;
@@ -94,30 +121,46 @@ const Title = styled.p`
   font-weight: 700;
   line-height: normal;
   margin-bottom: 12px;
-
-  @media (max-width: 780px) {
-    font-size: 20px;
-  }
+  text-align: center;
+  position: absolute;
+  top: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
 `;
 
 const Desc = styled.p`
+  width: max-content;
   color: #000;
   font-family: Noto Sans;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  position: absolute;
+  top: 124px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+`;
 
-  @media (max-width: 780px) {
-    font-size: 16px;
-  }
+const CardWrapper = styled.div`
+  position: absolute;
+  top: 124px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
 `;
 
 const PriceWrapper = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
-  width: 100%;
+  width: 240px;
+  margin-bottom: 12px;
 
   &:hover {
     background-color: #e58c6c;
@@ -132,8 +175,4 @@ const Price = styled.p`
   font-weight: 400;
   line-height: normal;
   margin-left: 12px;
-
-  @media (max-width: 780px) {
-    font-size: 16px;
-  }
 `;

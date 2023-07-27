@@ -83,6 +83,7 @@ const Description = styled.p`
 
   @media (max-width: 980px) {
     width: 100%;
+    max-width: max-content;
     font-size: 16px;
   }
 `;
