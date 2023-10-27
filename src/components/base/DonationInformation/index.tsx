@@ -16,21 +16,19 @@ export const DonationInformation = () => {
         </IconWrapper>
         <Title>銀行振込</Title>
         <Desc>
-          〇〇銀行
+          常陽銀行
           <br />
-          〇〇支点
-          <br />
-          店番号 111
+          土浦支点(店番号 006)
           <br />
           普通預金
           <br />
-          口座番号 1234567
+          口座番号 2278024
           <br />
-          中島竜基（ナカジマタツキ）
+          一般社団法人中島竜基を支える会
         </Desc>
       </ContentWrapper>
 
-      <ContentWrapper>
+      {/* <ContentWrapper>
         <IconWrapper>
           <BiCreditCard style={{ fontSize: "48px" }} />
         </IconWrapper>
@@ -57,7 +55,7 @@ export const DonationInformation = () => {
             <Price>150,000円</Price>
           </PriceWrapper>
         </CardWrapper>
-      </ContentWrapper>
+      </ContentWrapper> */}
     </Container>
   );
 };

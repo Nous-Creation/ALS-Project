@@ -8,7 +8,9 @@ interface Props {
 
 export const Button = ({ text, isEmail }: Props) => {
   return (
-    <Container href={isEmail ? "mailto:hoge@dummy.com" : "#donation"}>
+    <Container
+      href={isEmail ? "mailto:tatsuki.nakajima.als@gmail.com" : "#donation"}
+    >
       {text}
       <ArrowImage src="images/arrow-right.png" />
     </Container>

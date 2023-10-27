@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Header = () => {
   return (
     <Container>
-      <Logo>一般社団法人 中島竜基を支える会</Logo>
+      <Logo>一般社団法人中島竜基を支える会</Logo>
       <HeaderRight>
         <HeaderLink href="#overview">ASL治療と寄付金について</HeaderLink>
         <HeaderLink href="#message">本人から一言</HeaderLink>
