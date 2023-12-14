@@ -1,9 +1,10 @@
+import Link from "next/link";
 import styled from "styled-components";
 
 export const Header = () => {
   return (
     <Container>
-      <Logo>一般社団法人中島竜基を支える会</Logo>
+      <Logo href="/">一般社団法人中島竜基を支える会</Logo>
       <HeaderRight>
         <HeaderLink href="#overview">ASL治療と寄付金について</HeaderLink>
         <HeaderLink href="#message">本人から一言</HeaderLink>
@@ -22,7 +23,7 @@ const Container = styled.header`
   }
 `;
 
-const Logo = styled.p`
+const Logo = styled(Link)`
   color: #483b34;
   font-family: Noto Sans;
   font-size: 24px;

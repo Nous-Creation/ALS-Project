@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui";
+import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 
@@ -11,6 +12,7 @@ export const Footer = () => {
       </Desc>
 
       <Button text="お問い合わせ" isEmail={true} />
+      <NextLink href="/terms">特定商取引法に基づく表記</NextLink>
       <AllRights>© 中島竜基 ALS治療の支援募金. All Rights Reserved.</AllRights>
     </Container>
   );
@@ -49,6 +51,15 @@ const Desc = styled.p`
   margin: 0 auto 24px;
 `;
 
+const NextLink = styled(Link)`
+  color: #5e5e5e;
+  font-family: Inter;
+  font-size: 12px;
+  display: block;
+  margin-top: 48px;
+  margin-bottom: 12px;
+`;
+
 const AllRights = styled.p`
   color: #000;
   font-family: Inter;
@@ -56,5 +67,4 @@ const AllRights = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: 48px;
 `;

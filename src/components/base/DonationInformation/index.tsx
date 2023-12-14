@@ -28,7 +28,7 @@ export const DonationInformation = () => {
         </Desc>
       </ContentWrapper>
 
-      {/* <ContentWrapper>
+      <ContentWrapper>
         <IconWrapper>
           <BiCreditCard style={{ fontSize: "48px" }} />
         </IconWrapper>
@@ -55,7 +55,7 @@ export const DonationInformation = () => {
             <Price>150,000円</Price>
           </PriceWrapper>
         </CardWrapper>
-      </ContentWrapper> */}
+      </ContentWrapper>
     </Container>
   );
 };
