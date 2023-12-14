@@ -1,4 +1,4 @@
-import { Header } from "@/components/base";
+import { Footer, Header } from "@/components/base";
 import React from "react";
 import { styled } from "styled-components";
 
@@ -67,6 +67,7 @@ export const TermsPage = () => {
           <Text>5000円 / 10000円 / 50000円 / 100000円 </Text>
         </ContentWrapper>
       </Container>
+      <Footer />
     </div>
   );
 };
@@ -75,6 +76,8 @@ const Container = styled.div`
   max-width: 780px;
   width: 100%;
   margin: 48px auto;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #000;
 `;
 
 const H1 = styled.h1`
