@@ -37,22 +37,46 @@ export const DonationInformation = () => {
         <CardWrapper>
           <PriceWrapper>
             <AiFillCaretRight />
-            <Price>5,000円</Price>
+            <Price
+              href="https://buy.stripe.com/dR6dQZgxvgXVbnyfYZ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              5,000円
+            </Price>
           </PriceWrapper>
 
           <PriceWrapper>
             <AiFillCaretRight />
-            <Price>10,000円</Price>
+            <Price
+              href="https://buy.stripe.com/00geV380Z4b93V68ww"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              10,000円
+            </Price>
           </PriceWrapper>
 
           <PriceWrapper>
             <AiFillCaretRight />
-            <Price>50,000円</Price>
+            <Price
+              href="https://buy.stripe.com/8wM14d0yxdLJajucMO"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              50,000円
+            </Price>
           </PriceWrapper>
 
           <PriceWrapper>
             <AiFillCaretRight />
-            <Price>150,000円</Price>
+            <Price
+              href="https://buy.stripe.com/6oEcMVdlj0YX63e7sv"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              100,000円
+            </Price>
           </PriceWrapper>
         </CardWrapper>
       </ContentWrapper>
@@ -165,7 +189,7 @@ const PriceWrapper = styled.div`
   }
 `;
 
-const Price = styled.p`
+const Price = styled.a`
   color: #000;
   font-family: Noto Sans;
   font-size: 20px;
