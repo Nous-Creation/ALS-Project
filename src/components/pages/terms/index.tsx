@@ -76,12 +76,16 @@ const Container = styled.div`
   max-width: 780px;
   width: 100%;
   margin: 48px auto;
-  padding-bottom: 32px;
+  padding: 0 12px 32px;
   border-bottom: 1px solid #000;
 `;
 
 const H1 = styled.h1`
   margin-bottom: 24px;
+
+  @media (max-width: 780px) {
+    font-size: 28px;
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -89,8 +93,12 @@ const ContentWrapper = styled.div`
 `;
 
 const H2 = styled.h2`
-  margin-bottom: 12px;
+  /* margin-bottom: 4px; */
   color: #483b34;
+
+  @media (max-width: 780px) {
+    font-size: 20px;
+  }
 `;
 
 const List = styled.ul`
@@ -107,7 +115,10 @@ const ListItem = styled.li`
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+
+  @media (max-width: 780px) {
+    font-size: 16px;
+  }
 `;
 
 const Text = styled.p`
@@ -117,5 +128,8 @@ const Text = styled.p`
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+
+  @media (max-width: 780px) {
+    font-size: 16px;
+  }
 `;
