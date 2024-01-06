@@ -5,7 +5,7 @@ export const FirstView = () => {
     <Container>
       <RightWrapper>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <FamilyImage src={"/images/family.png"} alt="" />
+        <FamilyImage src={"/images/first-view2.JPG"} alt="" />
       </RightWrapper>
 
       <LeftWrapper>
@@ -84,4 +84,6 @@ const Shape = keyframes`
 const FamilyImage = styled.img`
   width: 100%;
   animation: ${Shape} 10s ease 0s infinite normal;
+  aspect-ratio: 2/1.5;
+  object-fit: cover;
 `;
