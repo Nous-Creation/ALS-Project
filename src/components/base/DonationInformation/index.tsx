@@ -38,6 +38,26 @@ export const DonationInformation = () => {
           <PriceWrapper>
             <AiFillCaretRight />
             <Price
+              href="https://buy.stripe.com/7sI9AJ4ONePN3V69AG"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              1,000円
+            </Price>
+          </PriceWrapper>
+          <PriceWrapper>
+            <AiFillCaretRight />
+            <Price
+              href="https://buy.stripe.com/4gwfZ7dljePN0IUaEJ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              3,000円
+            </Price>
+          </PriceWrapper>
+          <PriceWrapper>
+            <AiFillCaretRight />
+            <Price
               href="https://buy.stripe.com/dR6dQZgxvgXVbnyfYZ"
               target="_blank"
               rel="noopener noreferrer"
@@ -65,17 +85,6 @@ export const DonationInformation = () => {
               rel="noopener noreferrer"
             >
               50,000円
-            </Price>
-          </PriceWrapper>
-
-          <PriceWrapper>
-            <AiFillCaretRight />
-            <Price
-              href="https://buy.stripe.com/6oEcMVdlj0YX63e7sv"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              100,000円
             </Price>
           </PriceWrapper>
         </CardWrapper>
