@@ -6,7 +6,7 @@ export const Header = () => {
     <Container>
       <Logo href="/">一般社団法人中島竜基を支える会</Logo>
       <HeaderRight>
-        <HeaderLink href="#overview">ASL治療と寄付金について</HeaderLink>
+        <HeaderLink href="#overview">ALS治療と寄付金について</HeaderLink>
         <HeaderLink href="#message">本人から一言</HeaderLink>
       </HeaderRight>
     </Container>

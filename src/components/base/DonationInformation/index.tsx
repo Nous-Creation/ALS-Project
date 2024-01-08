@@ -87,6 +87,17 @@ export const DonationInformation = () => {
               50,000円
             </Price>
           </PriceWrapper>
+
+          <PriceWrapper>
+            <AiFillCaretRight />
+            <Price
+              href="https://buy.stripe.com/6oEcMVdlj0YX63e7sv"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              100,000円
+            </Price>
+          </PriceWrapper>
         </CardWrapper>
       </ContentWrapper>
     </Container>
