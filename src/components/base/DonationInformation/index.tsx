@@ -18,7 +18,7 @@ export const DonationInformation = () => {
         <Desc>
           常陽銀行
           <br />
-          土浦支点(店番号 006)
+          土浦支店(店番号 006)
           <br />
           普通預金
           <br />
