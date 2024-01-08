@@ -122,7 +122,7 @@ const Container = styled.div`
 
 const ContentWrapper = styled.div`
   width: 410px;
-  height: 340px;
+  height: 392px;
   background-color: #ffffff;
   border-radius: 30px;
   text-align: left;
