@@ -4,8 +4,6 @@ import { styled } from 'styled-components';
 
 export const Contribution = ({ contribution, updateDate } : ContributionProps) => {
 const date = new Date(updateDate);
-console.log(updateDate);
-
 
 const formattedDate = `${date.getFullYear()}年${String(date.getMonth() + 1).padStart(2, '0')}月${String(date.getDate()).padStart(2, '0')}日`;
 
