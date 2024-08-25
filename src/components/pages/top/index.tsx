@@ -10,8 +10,10 @@ import {
   Footer,
   ImageSlider,
 } from "@/components/base";
+import { Contribution } from "@/components/base/Contribution";
+import { ContributionProps } from "@/pages";
 
-export const Top = () => {
+export const Top = ({ contribution, updateDate } : ContributionProps) => {
   return (
     <div>
       <Header />
@@ -25,6 +27,9 @@ export const Top = () => {
       <div id="message">
         <PatientMessage />
       </div>
+      {contribution && updateDate ?
+      <Contribution contribution={contribution} updateDate={updateDate} />
+      : null}
       <div id="donation">
         <DonationInformation />
       </div>

@@ -1,7 +1,13 @@
 import Head from "next/head";
 import { Top } from "@/components/pages";
+import { client } from "@/libs/client";
 
-export default function Home() {
+export interface ContributionProps {
+  contribution: string
+  updateDate: string
+}
+
+export default function Home({contribution, updateDate}: ContributionProps) {
   return (
     <>
       <Head>
@@ -14,8 +20,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Top />
+        <Top contribution={contribution} updateDate={updateDate} />
       </main>
     </>
   );
 }
+
+// microCMSへAPIリクエスト
+export const getStaticProps = async () => {
+  const contribution = await client.get({ endpoint: "contribution" });
+
+  return {
+    props: {
+      contribution: contribution.contribution,
+      updateDate: contribution.updateDate,
+    },
+  };
+};

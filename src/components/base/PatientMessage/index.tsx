@@ -68,13 +68,13 @@ const Title = styled.h2`
   font-family: Noto Sans;
   font-size: 36px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: normal;
+  margin-bottom: 24px;
   text-align: center;
-  margin-bottom: 32px;
 
   @media (max-width: 980px) {
-    font-size: 24px;
+    font-size: 28px;
   }
 `;
 
