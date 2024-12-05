@@ -27,7 +27,7 @@ export const Contribution = ({
       </ContributionWrapper>
       <Title>治療費総額</Title>
       <ExpenditurePrice>{expenditure}円</ExpenditurePrice>
-      <SubTitle>治療費詳細</SubTitle>
+      <Title>治療費詳細</Title>
       <Treatment>{treatment}</Treatment>
     </Container>
   );
@@ -49,7 +49,7 @@ const Title = styled.h2`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   text-align: center;
 
   @media (max-width: 980px) {
