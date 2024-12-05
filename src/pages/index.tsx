@@ -3,11 +3,18 @@ import { Top } from "@/components/pages";
 import { client } from "@/libs/client";
 
 export interface ContributionProps {
-  contribution: string
-  updateDate: string
+  contribution: string;
+  updateDate: string;
+  expenditure: string;
+  treatment: string;
 }
 
-export default function Home({contribution, updateDate}: ContributionProps) {
+export default function Home({
+  contribution,
+  updateDate,
+  expenditure,
+  treatment,
+}: ContributionProps) {
   return (
     <>
       <Head>
@@ -20,7 +27,12 @@ export default function Home({contribution, updateDate}: ContributionProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Top contribution={contribution} updateDate={updateDate} />
+        <Top
+          contribution={contribution}
+          updateDate={updateDate}
+          expenditure={expenditure}
+          treatment={treatment}
+        />
       </main>
     </>
   );
@@ -34,6 +46,8 @@ export const getStaticProps = async () => {
     props: {
       contribution: contribution.contribution,
       updateDate: contribution.updateDate,
+      expenditure: contribution.expenditure,
+      treatment: contribution.treatment,
     },
   };
 };

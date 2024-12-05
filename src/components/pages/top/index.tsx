@@ -13,7 +13,12 @@ import {
 import { Contribution } from "@/components/base/Contribution";
 import { ContributionProps } from "@/pages";
 
-export const Top = ({ contribution, updateDate } : ContributionProps) => {
+export const Top = ({
+  contribution,
+  updateDate,
+  expenditure,
+  treatment,
+}: ContributionProps) => {
   return (
     <div>
       <Header />
@@ -27,9 +32,14 @@ export const Top = ({ contribution, updateDate } : ContributionProps) => {
       <div id="message">
         <PatientMessage />
       </div>
-      {contribution && updateDate ?
-      <Contribution contribution={contribution} updateDate={updateDate} />
-      : null}
+      {contribution && updateDate ? (
+        <Contribution
+          contribution={contribution}
+          updateDate={updateDate}
+          expenditure={expenditure}
+          treatment={treatment}
+        />
+      ) : null}
       <div id="donation">
         <DonationInformation />
       </div>
